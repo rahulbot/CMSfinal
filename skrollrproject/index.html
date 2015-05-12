@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="css/our.css" type="text/css" media="screen" title="no title" charset="utf-8">
+
+    <title>Where is our Water Going?</title>
+    
+</head>
+<body>
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <div id = "header">
+        <br>
+        <h1>WHERE IS OUR WATER GOING?</h1>
+    </div>
+    <br>
+        <h2>Drought isn’t a new phenomenon in the United States. </h2>
+            <!-- VIS: small multiples map (current vis was an SVG tester)--> 
+            		<script type="text/javascript">
+            			//Width and height
+            			var w = 500;
+            			var h = 100;
+            			
+            			var dataset = [
+            							[5, 20], [480, 90], [250, 50], [100, 33], [330, 95],
+            							[410, 12], [475, 44], [25, 67], [85, 21], [220, 88]
+            						  ];
+            	
+            			//Create SVG element
+            			var svg = d3.select("body")
+            						.append("svg")
+            						.attr("width", w)
+            						.attr("height", h);
+            
+            			svg.selectAll("circle")
+            			   .data(dataset)
+            			   .enter()
+            			   .append("circle")
+            			   .attr("cx", function(d) {
+            			   		return d[0];
+            			   })
+            			   .attr("cy", function(d) {
+            			   		return d[1];
+            			   })
+            			   .attr("r", 5);
+            		</script>
+        <h3>But recently, it’s been getting a lot of attention in the news </h3>
+        <!-- VIS: California/west coast drought test -->
+        <svg width="700" height="400">
+            <rect x="0" y="0" width="700" height="400" fill="grey"/>
+        </svg>
+    <br>
+    <div id - "highlight">
+        <h3>Drought is caused by climate variations, like changes in rainfall and evaporation rates...</h3>
+        <!-- Rain illustration? -->
+        <h3>But the drought we worry about is ultimately a human problem – drought can have huge social, economic, and environmental impacts because of how we manage water.</h3>
+    </div>
+    <div id = "highlight">
+    <br>
+        <h2>So how can we reduce our water consumption?</h2>
+    <br>
+            <h4>1) Taking shorter showers?</h4>
+            <p>A 10 minute shower with an average U.S. showerhead would use 21 gallons of water.</p>
+            <p>If you halved that time, you’d be saving 10.5 gallons of water per day, or 73.5 gallons in a week.</p>
+    <br>
+            <h4>2) Not watering your lawn? </h4>
+            <p>If you ran a sprinkler from an average garden hose for 1 hour, you would use about 1020 gallons of water.</p>
+            <p>If you watered your lawn every other day, you’d be saving around 3060 gallons of water in a week.</p>
+    <br>
+            <h4>3) Going vegan?</h4>
+            <p>Around 92% of our daily water use is hidden in the food we consume, especially meats.</p>
+    <br>
+    </div>
+    <!-- this section: visualize somehow? -->
+    <p>So if you normally ate a pound of beef per day (between lunch and dinner) and gave it up for a week, you would save <b>12915 gallons</b> of water.</p>
+    <p>But between irrigation for crops and drinking water for livestock, the United States uses about <b>117 billion gallons</b> of water per day. </p>
+    <p>That would take over 9 million people (about 9,060,000 or 3% of the US) all giving up a week of beef to counteract ONE day of industrial agriculture.</p>
+    <p>(Or, you could give up beef for 173,623 years.)</p>
+    <br>
+    <p>But if you don’t get your protein from meat, you have to replace it with other nutritional foods with their own water footprint…</p>
+        <!-- VIS: food water footprint/nutrition -->
+        <svg width="700" height="400">
+            <rect x="0" y="0" width="700" height="400" fill="grey"/>
+        </svg>
+    <br>
+    <br>
+    <div id = "highlight">
+    <br>
+        <h2>But are these changes accessible?</h2>
+    <br>
+        <p>This plan only works if you can afford the time and money to consciously change your diet and prepare meals with different foods.</p>
+    <br>
+        <h4>Around <b>46,535,888 people</b> in the US participate monthly in the Supplemental Nutrition Assistance Program (SNAP).</h4>
+        <p>...and around <b>20,400,000 people</b> are living in deep poverty and most likely cannot provide the supplemental income for extra food.</p>
+    <br>
+        <h4>So even if we could convince a portion of the population to cut certain water consumption-heavy foods out of their diet, it seems like we’re fighting a losing battle.</h4>
+    <br>
+        <h3><b>Even if we all were conscious of our lifestyle choices and had the ability to change them, this alone would not counteract the impact of drought.</b></h3>
+    <br>
+    </div>
+    <h2>So what else can you do?</h2>
+    <p>How can we know where our water is going and effect change?</p>
+    
+    <!-- [insert rest of narrative] -->
+    
+    <br>
+    <div id= "credits">
+        <h4>A project by Val Healy, Ceri Riley, and Nolan Essigmann</h4>
+    </div>
+    <br><br>
+        
+    <div id="skrollr-body">
+        </div>
+    
+	<script type="text/javascript" src="http://prinzhorn.github.io/skrollr/dist/skrollr.min.js"></script>
+	<script type="text/javascript">
+    	var s = skrollr.init();
+    	console.log("Hello world!");
+	</script>
+	
+</body>
+
+</html>
