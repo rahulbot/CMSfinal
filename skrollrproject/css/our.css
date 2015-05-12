@@ -15,7 +15,7 @@ p {color:#004949;}
     color:#D1FFFF;
     height:120px;
 }
-#highlight {
+.highlight {
     background-color:#E6FFFF;
     height = auto;
     width = auto;
